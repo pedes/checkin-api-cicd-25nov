@@ -127,7 +127,7 @@ jobs:
         run: |
           export CA_MAVEN_USERNAME='~~~Client~~~'
           export CA_MAVEN_PASSWORD="$CA_CLIENT_ID~?~$CA_CLIENT_SECRET"
-          mvn -B -ntp -DskipTests deploy
+          mvn -B -ntp -DskipTests clean deploy -X
 
   deploy_cloudhub:
     name: Deploy the published Mule app to CloudHub Sandbox
