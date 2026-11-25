@@ -1,0 +1,15 @@
+# Application properties for check-in-papi-app
+http:
+  host: "0.0.0.0"
+  port: "8081"
+
+api:
+  groupId: "1a4efee3-f766-422d-88c7-12c099d1de74"
+  artifactId: "simplified-check-in-papi"
+  version: "1.2.0"
+  resource: "api.yaml"
+  id: "21318768"
+
+tls:
+  keyStore:
+    alias: "server"
