@@ -41,7 +41,8 @@ jobs:
           distribution: temurin
           java-version: '17'
           mvn-server-credentials: |
-            ${{ vars.EXCHANGE_SERVER_ID || 'anypoint-exchange-v3' }}:CA_MAVEN_USERNAME:CA_MAVEN_PASSWORD
+            ${{ vars.EXCHANGE_SERVER_ID || 'anypoint-exchange-v3-student-deployment' }}:CA_MAVEN_USERNAME:CA_MAVEN_PASSWORD
+            anypoint-exchange-v3:CA_MAVEN_USERNAME:CA_MAVEN_PASSWORD
             releases-ee:RELEASES_EE_USERNAME:RELEASES_EE_PASSWORD
 
       - &cache-maven
